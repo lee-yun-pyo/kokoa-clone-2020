@@ -1,5 +1,7 @@
 .user-component {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* position: absolute; */
     /* margin-top: 140px; */
 }
@@ -10,7 +12,7 @@
 .user-component__avatar {
     height: 60px;
     width: 60px; /* big size */
-    border-radius: 35%;
+    border-radius: 40%;
     margin-right: 20px;
 }
 .user-component__title {
@@ -25,5 +27,18 @@
 
 .user-component__avatar--xl {
     width : 70px;
-    width : 70px;
+    height : 70px;
+}
+
+.user-component__avatar--sm {
+    width: 50px;
+    height: 50px;
+}
+
+.user-component__title--not-bold {
+    font-weight: 400;
+}
+
+.user-component__column:last-child {
+    color: rgba(0,0,0,0.5);
 }
