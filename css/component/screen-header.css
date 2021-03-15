@@ -1,10 +1,14 @@
+/* Friends-bar */
 .screen-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: var(--horizontal-space);
   padding-top: 35px;
   opacity: 90%;
+  /* position : fixed;
+  width: 100%;
+  box-sizing: border-box; */
 }
 
 .screen-header__title {
@@ -20,3 +24,4 @@
 .screen-header__icon span {
   margin: 15px;
 }
+

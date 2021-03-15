@@ -8,6 +8,7 @@
     <title>Friends to KakaoTalk</title>
   </head>
   <body>
+    <!-- status-bar -->
     <div id="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -23,6 +24,7 @@
       </div>
     </div>
 
+    <!-- Friends-bar -->
     <header class="screen-header">
       <h1 class="screen-header__title">Friends</h1>
       <div class="screen-header__icon">
@@ -32,6 +34,52 @@
       </div>
     </header>
 
+    <!-- Friends dispaly-bar -->
+    <a href="#" id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      <span>Friends' Names Display</span>
+      <i class="fas fa-chevron-right fa-sm"></i>
+    </a>
+
+    <main class="friends-screen">
+      <!-- user-component -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://yt3.ggpht.com/ytc/AAUvwni_LdnpDi-SOIhjp4Kxo2l_yVBoYsfdDCpUM5VDzg=s900-c-k-c0x00ffffff-no-rj"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Lee yun pyo</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-sm"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwni_LdnpDi-SOIhjp4Kxo2l_yVBoYsfdDCpUM5VDzg=s900-c-k-c0x00ffffff-no-rj"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Channel</h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-sm"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- navigation-bar -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
