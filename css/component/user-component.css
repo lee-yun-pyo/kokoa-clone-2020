@@ -49,3 +49,7 @@
 .user-component__column .badge {
     margin-top : 10px;
 }
+
+.chat-component {
+    margin-bottom : 10px;
+}

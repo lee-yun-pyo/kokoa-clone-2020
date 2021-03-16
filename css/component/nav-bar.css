@@ -26,12 +26,11 @@
 }
 
 .nav__dot {
-  display: flex;
+  position: absolute;
+  right: 35px;
+  top: 15px;
   background-color: tomato;
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  position: absolute;
-  right: 35px;
-  top: 15px;
 }

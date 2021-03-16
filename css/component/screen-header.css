@@ -19,6 +19,7 @@
 .screen-header__icon {
   display: flex;
   justify-content: flex-end;
+  position: relative;  
 }
 
 .screen-header__icon span {
