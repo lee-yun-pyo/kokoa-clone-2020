@@ -5,12 +5,14 @@
   align-items: center;
   padding: var(--horizontal-space);
   padding-top: 35px;
-  opacity: 90%;
-  /* position : fixed;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  /* position: fixed;
   width: 100%;
   box-sizing: border-box; */
 }
-
 .screen-header__title {
   font-size: 30px;
   font-weight: bold;
@@ -19,7 +21,7 @@
 .screen-header__icon {
   display: flex;
   justify-content: flex-end;
-  position: relative;  
+  position: relative;
 }
 
 .screen-header__icon span {
