@@ -62,5 +62,7 @@
 .splash-screen__title {
   color: var(--yellow);
   position: absolute;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
   font-size: 40px;
 }
