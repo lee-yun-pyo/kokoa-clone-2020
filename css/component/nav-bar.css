@@ -5,7 +5,7 @@
   width: 100%;
   box-sizing: border-box;
   /* border-box : Consider border and padding size as size of elements */
-  background-color: #f9f9fa;
+  background-color: #b02bf8;
   padding: 15px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 .nav__link {
-  color: #0e0e0e;
+  color: white;
   position: relative;
 }
 
