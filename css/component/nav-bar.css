@@ -8,6 +8,8 @@
   background-color: #b02bf8;
   padding: 15px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .nav__list {

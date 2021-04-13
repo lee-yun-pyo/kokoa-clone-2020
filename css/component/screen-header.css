@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--horizontal-space);
-  padding-top: 35px;
-  background: #3a0243;
+  padding: 35px var(--horizontal-space) 10px;
+  /* padding-top: 35px; */
+  background: #b02bf8;
+  /* border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
   position: sticky;
   top: 0px;
   z-index: 1;

@@ -22,6 +22,10 @@
 .friends-screen__channel {
   margin-bottom: 80px;
 }
+/* .friends-screen__teams {
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+} */
 .friends-screen__channel-header {
   margin-top: 25px;
   border-top: var(--main-border);
@@ -34,20 +38,43 @@
 }
 
 @keyframes hideSplashScreen {
-  from {
+  0% {
+    /* background-color: white; */
+    opacity: 1;
+    transform: translateY(0);
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    /* background-color: var(--yellow); */
+    transform: translateY(-100vh);
     opacity: 1;
   }
-  to {
+  75% {
+    /* background-color: var(--yellow); */
+  }
+  100% {
+    transform: translateY(-100vh);
     opacity: 0;
     visibility: hidden;
   }
 }
-
+@keyframes hiddenScreen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--puple);
   position: absolute;
-  color: #3c1e1e;
-  width: 100vw;
+  color: white;
+  width: 100%;
   height: 100vh;
   z-index: 3;
   top: 0;
@@ -55,14 +82,11 @@
   justify-content: center;
   align-items: center;
   font-size: 64px;
-  animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: hiddenScreen 2s cubic-bezier(0.555, -0.6, 0.89, 0.915) forwards;
+  animation-delay: 1s;
 }
 
-.splash-screen__title {
-  color: var(--yellow);
-  position: absolute;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 800;
-  font-size: 40px;
+#splash-screen i {
+  animation: hideSplashScreen 2s cubic-bezier(0.555, -0.6, 0.89, 0.915) forwards;
+  animation-delay: 1s;
 }
