@@ -27,9 +27,18 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100%;
   /* width: 100vw; */
-  background-color: var(--puple);
+  background-color: white;
+  color: black;
 }
-
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(4px);
+  z-index: -1;
+}
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
