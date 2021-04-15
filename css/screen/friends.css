@@ -20,7 +20,7 @@
   padding: 0px var(--horizontal-space);
 }
 .friends-screen__channel {
-  margin-bottom: 80px;
+  margin-bottom: var(--nav-height);
 }
 /* .friends-screen__teams {
   border-radius: 24px;

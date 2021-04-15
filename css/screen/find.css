@@ -109,7 +109,7 @@
   animation: heartBeat 1s linear infinite;
 }
 .table {
-  margin-bottom: 80px;
+  margin-bottom: var(--nav-height);
 }
 .table-text {
   display: flex;
