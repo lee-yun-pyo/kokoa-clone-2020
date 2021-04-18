@@ -8,6 +8,10 @@
     <title>Welcome to KakaoTalk</title>
   </head>
   <body>
+    <img
+      src="https://www.datocms-assets.com/15991/1581673360-premierthumbnail.png?w=1000&fit=max&fm=jpg"
+      class="background"
+    />
     <div id="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -25,20 +29,34 @@
 
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
-      <p class="welcome-header__text">
-        If you have a Kakao Account, <br />log in with your email or phone
-        number.
-      </p>
     </header>
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="username" type="password" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <!-- button : type="submit" in form tag -->
-      <input type="submit" value="Sign up" />
-      <a href="#">Find Kakao Account or Password</a>
-    </form>
-
+    <div class="login">
+      <form action="friends.html" method="get" id="login-form">
+        <input name="username" required type="email" placeholder="Email" />
+        <input
+          name="username"
+          required
+          type="password"
+          placeholder="Password"
+        />
+        <input type="submit" value="Log in" />
+        <!-- button : type="submit" in form tag -->
+        <a href="#">Find Kakao Account or Password</a>
+      </form>
+      <div class="login-with">
+        <div class="login-with__bar"></div>
+        <p>or login with</p>
+        <div class="login-with__bar"></div>
+      </div>
+      <div class="login-btns">
+        <button class="login-btn">
+          <i class="fab fa-facebook-f"></i>Facebook</button
+        ><button class="login-btn"><i class="fab fa-twitter"></i>Twitter</button
+        ><button class="login-btn">
+          <i class="fab fa-google-plus-g"></i>Google</button
+        ><button class="login-btn"><i class="fab fa-apple"></i>Apple</button>
+      </div>
+    </div>
     <div id="no-mobile">
       <span>Your screen is too big</span>
     </div>

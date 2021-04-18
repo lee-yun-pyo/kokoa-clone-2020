@@ -4,10 +4,9 @@
   align-items: center;
   text-align: center;
   margin-top: 65px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .welcome-header__title {
-  margin-bottom: 23px;
   font-size: 25px;
   font-weight: 500;
 }
@@ -15,10 +14,17 @@
   color: rgb(125, 125, 125);
   line-height: 1.2;
 }
-
+.login {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin: 30px;
+  padding: 30px 0;
+}
 #login-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0px 20px;
 }
 
@@ -29,27 +35,92 @@
   margin-bottom: 20px;
 }
 #login-form input:not([type="submit"]) {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 90%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
   transition: border-color 0.3s ease-in-out;
 }
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: white;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--puple);
+  color: white;
   cursor: pointer;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 17px;
+  padding: 15px;
+  transition: all 0.8s ease-in-out;
 }
-
+#login-form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--puple);
+}
 #login-form a {
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  color: inherit;
+  color: white;
+  cursor: pointer;
+}
+#login-form a:hover {
+  text-decoration: underline;
+}
+.login-btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.login-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.login-with p {
+  margin: 0 10px;
+}
+.login-with__bar {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 25%;
+  height: 2px;
+}
+.login-btn {
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.login-btn i {
+  margin-right: 10px;
+}
+.login-btn:first-child {
+  background-color: #3d548e;
+}
+.login-btn:nth-child(2) {
+  background-color: #1c9cea;
+}
+.login-btn:nth-child(3) {
+  background-color: #d54b3d;
+}
+.login-btn:last-child {
+  background-color: black;
+}
+.login-btn:hover {
+  filter: brightness(90%);
 }

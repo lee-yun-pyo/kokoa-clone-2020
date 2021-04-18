@@ -7,7 +7,6 @@
   top: -9px;
   right: -7px;
 }
-
 .recommended-friends {
   margin: 15px 0px;
   padding: 20px 0px;
@@ -15,7 +14,7 @@
   border-bottom: var(--main-border);
 }
 .nextMatch-title {
-  color: black;
+  color: white;
   font-size: 20px;
   font-weight: 600;
   font-style: italic;
@@ -27,10 +26,12 @@
   justify-content: center;
   border-radius: 8px;
   padding: 5px 0;
-  color: black;
+  color: white;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
+
 .nextMatch-date {
   text-align: center;
   margin-bottom: 8px;
@@ -56,7 +57,7 @@
 }
 .nextMatch-section__time {
   padding: 3px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 0 10px;
   font-weight: 600;
@@ -64,7 +65,7 @@
 }
 .moreview {
   font-size: 15px;
-  color: black;
+  color: white;
   font-weight: 600;
   cursor: pointer;
 }
@@ -86,6 +87,7 @@
   bottom: 16px;
   right: 8px;
   font-size: 15px;
+  cursor: pointer;
 }
 .heart__count span {
   margin-left: 4px;
@@ -118,14 +120,14 @@
   margin-bottom: 15px;
 }
 .table-title {
-  color: black;
+  color: white;
   font-size: 20px;
   font-weight: 600;
   font-style: italic;
 }
 .moreview {
   font-size: 15px;
-  color: black;
+  color: white;
   font-weight: 600;
   cursor: pointer;
 }
@@ -133,14 +135,14 @@
   text-decoration: underline;
 }
 .table-top5 {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   width: 100%;
   text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.9);
 }
 .table-top5 tr:first-child {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .table-top5 td,
 .table-top5 th {

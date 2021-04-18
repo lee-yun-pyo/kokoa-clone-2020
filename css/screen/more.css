@@ -17,6 +17,7 @@
 .pay-title i {
   position: absolute;
   left: 35px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .pay-title h4 {
   font-weight: 500;
@@ -26,11 +27,15 @@
   cursor: pointer;
 }
 .pay-title span:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 .pay-content {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 15px;
 }
 .pay-content__img {
   width: 50px;
@@ -48,23 +53,24 @@
   display: block;
 }
 .pay-content__remit,
-.pay-content__pay {
-  margin-right: 20px;
+.pay-content__pay,
+.pay-content__assets {
+  margin-left: 13px;
   border: none;
-  font-size: 17px;
-  padding: 8px 15px;
+  font-size: 14px;
+  padding: 8px 11px;
   border-radius: 8px;
+  cursor: pointer;
 }
-/* .fa-cc-apple-pay {
-  border: 3px dashed black;
-  padding: 1px;
-  border-radius: 5px;
-} */
+.pay-content button:active {
+  background-color: black;
+  color: white;
+}
 .user-component__text .fa-exclamation-circle {
   color: red;
   position: absolute;
   bottom: -1px;
-  left: 113px;
+  right: 45px;
 }
 .weather {
   margin-bottom: var(--nav-height);
@@ -81,6 +87,7 @@
   position: absolute;
   bottom: 1px;
   left: 150px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .weather-content {
   display: flex;
@@ -113,4 +120,15 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg) translateY(30%);
+  }
+  100% {
+    transform: none;
+  }
 }

@@ -5,7 +5,7 @@
   width: 100%;
   box-sizing: border-box;
   /* border-box : Consider border and padding size as size of elements */
-  background-color: #b02bf8;
+  background-color: #00ff93;
   padding: 15px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-top-left-radius: 25px;
@@ -17,27 +17,34 @@
   justify-content: space-between;
 }
 .nav__link {
-  color: white;
+  color: black;
   position: relative;
 }
-
-@keyframes notificationAnimation {
+@keyframes vibration2 {
   0% {
-    transform: none;
+    transform: translateX(2.5px);
+  }
+  15% {
+    transform: translateX(-2.5px);
+  }
+  30% {
+    transform: translateX(2.5px);
   }
   50% {
-    transform: translateY(-5px) rotateY(360deg);
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
   }
   100% {
-    transform: none;
+    transform: translateX(0);
   }
 }
-
 .nav__notification {
   position: absolute;
-  left: 18px;
-  bottom: 13px;
-  animation: notificationAnimation 2s ease-in-out infinite;
+  left: 20px;
+  bottom: 20px;
+  animation: vibration2 0.8s ease-in-out infinite;
 }
 
 .nav__dot {

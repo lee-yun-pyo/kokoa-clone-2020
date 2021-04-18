@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - KakaoTalk</title>
+  </head>
+  <body id="chat-screen">
+    <!-- status-bar -->
+    <div id="status-bar" class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <span
+          ><a href="chats.html"> <i class="fas fa-chevron-left fa-2x"></i> </a
+        ></span>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Premier league</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Sunday, April 18, 2021</div>
+      <!-- message-screen-->
+      <div class="message-row">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Premier league</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >I'll let you know your next game schedule.</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Premier league</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >the next opponent: chelsea <br />
+              the next date: April 26, 2021 <br />
+              H/A : H</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <!-- reply-screen -->
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message..." />
+          <i class="far fa-smile fa-lg"></i>
+          <button>
+            <i class="fas fa-arrow-up fa-lg"></i>
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <div id="no-mobile">
+      <img
+        src="https://w.namu.la/s/e8bc4a4e1b981fd58262a53d93dea0a679a15d964a6e2b7d7c335928208cc0c1aefb20d6399d70413e37b95e5f5bbc20d41e244263add0dc2cc6fdbcfd4b93ba9a3d4a08d6f6fda0962cb7fdaa8f62b4bcb6682f68cf5b9891b140e4fa9c469c"
+      />
+    </div>
+
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </body>
+</html>
