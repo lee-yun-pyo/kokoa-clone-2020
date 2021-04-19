@@ -5,9 +5,7 @@
   background-color: #fafafa;
   padding: 12px 0px;
   margin-bottom: 10px;
-  /*margin-top : 96px;*/
   /* position: absolute; /* locate this bar when other bars fixed */
-  /* width: 100%; */
   color: #cccccc;
 }
 #friends-display-link span {
@@ -36,7 +34,6 @@
 
 @keyframes hideSplashScreen {
   0% {
-    /* background-color: white; */
     opacity: 1;
     transform: translateY(0);
     transform: rotate(0);
@@ -45,12 +42,10 @@
     transform: rotate(90deg);
   }
   50% {
-    /* background-color: var(--yellow); */
     transform: translateY(-100vh);
     opacity: 1;
   }
   75% {
-    /* background-color: var(--yellow); */
   }
   100% {
     transform: translateY(-100vh);
@@ -68,22 +63,44 @@
   }
 }
 #splash-screen {
-  background-color: var(--puple);
-  position: absolute;
-  color: white;
-  width: 100%;
-  height: 100vh;
-  z-index: 3;
-  top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 64px;
-  animation: hiddenScreen 2s cubic-bezier(0.555, -0.6, 0.89, 0.915) forwards;
-  animation-delay: 1s;
+  background-color: #00ff93;
+  position: fixed;
+  color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  font-size: 50px;
+  animation: hiddenScreen 1.5s cubic-bezier(0.555, -0.6, 0.89, 0.915) forwards;
+  animation-delay: 2.5s;
+}
+#splash-screen i {
+  animation: hideSplashScreen 2s 2.5s cubic-bezier(0.555, -0.6, 0.89, 0.915)
+    forwards;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 0 19px 38px rgba(220, 195, 205, 0.2),
+    0 15px 12px rgba(220, 195, 205, 0.3);
+}
+#splash-screen h2 {
+  font-size: 25px;
+  animation: fadeIn 1s ease-in-out infinite;
 }
 
-#splash-screen i {
-  animation: hideSplashScreen 2s cubic-bezier(0.555, -0.6, 0.89, 0.915) forwards;
-  animation-delay: 1s;
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
